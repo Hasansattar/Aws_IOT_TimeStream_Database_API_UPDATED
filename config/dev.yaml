@@ -1,0 +1,34 @@
+aws_account: '951882055661'
+aws_region: eu-west-1
+
+ 
+
+
+appsyncIotStream:
+  appsync_API:
+    domain: graph-api-dev.aquacontrol.ai
+    certificateArn: arn:aws:acm:us-east-1:951882055661:certificate/6911f0c7-d583-4be4-baf6-cc03d771694e
+
+
+
+lambdaMappings:
+  plants:
+    p123:
+      plant_id: p123
+      plant_name: alon
+      timestream_table: plant_alon
+      timestream_database: AquaControl
+      valid_ports:
+        - x01
+        - x03
+        - x04
+        - x05
+        - x07
+        - x08
+    
+    p678:
+      plant_id: p678
+      timestream_table: abc_table
+      plant_name: alon  
+
+
